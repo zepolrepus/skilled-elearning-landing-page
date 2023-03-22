@@ -5,6 +5,9 @@
         {"type": "card2", "icon": "icon-design.svg", "title": "Design", "text": "Create beautiful, usable interfaces to help shape the future of how the web looks."},
         {"type": "card2", "icon": "icon-photography.svg", "title": "Photography", "text": "Explore critical fundamentals like lighting, composition, and focus to capture exceptional photos."},
         {"type": "card2", "icon": "icon-crypto.svg", "title": "Crypto", "text": "All you need to know to get started investing in crypto. Go from beginner to advanced with this 54 hour course."},
-        {"type": "card2", "icon": "icon-business.svg", "title": "Business", "text": "A step-by-step playbook to help you start, scale, and sustain your business without outside investment."}
+        {"type": "card2", "icon": "icon-business.svg", "title": "Business", "text": "A step-by-step playbook to help you start, scale, and sustain your business without outside investment."},
+        {"type": "card2", "icon": "icon-crypto.svg", "title": "Lorem Ipsum is simply", "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."},
+        {"type": "card2", "icon": "icon-crypto.svg", "title": "Lorem Ipsum is simply", "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."},
+        {"type": "card1", "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."}
     ]
 }

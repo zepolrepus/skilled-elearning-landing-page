@@ -38,12 +38,27 @@ const { cardType, cardText, cardIcon, cardTitle } = Astro.props;
     }
 
     .card .card2Main h4, p, a, img {
-        padding-left: 30px;
+        padding: 0 30px;
     }
-    .card .card2Main img {
+    .card .card2Main p {
+        height: 112px;
+    }
+    img {
         position: relative;
-        top: -30px;
-        
+        top: -28px;
+    }
 
+    @media (max-width: 650px){
+        .card .card1Main {
+        width: 343px;
+        height: auto;
+        }
+        .card .card1Main h3 {
+            font-weight: bolder;
+            font-size: 24px;
+            line-height: 28px;
+            color: var(--white);
+            padding: 30px 30px;
+    }
     }
 </style>

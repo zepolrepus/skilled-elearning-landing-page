@@ -24,7 +24,7 @@ import Button from "./Button.astro";
 <style>
     .heroContent {
         width: 457px;
-        margin: auto 0;
+        margin: auto 65px;
     }
     .hero {
         height: 740px;
@@ -45,18 +45,38 @@ import Button from "./Button.astro";
         align-items: center;
     }
 
-    @media (max-width: 800px){
+    @media (max-width: 1024px){
         .hero {
-        height: 548px;
+        height: 620px;
         background-image: url('assets/image-hero-tablet.png');
-        background-position: right -240px top -75px;
+        background-position: right -150px top -90px;
         }
+        .heroContent {
+        width: 398px;
+        }
+        .heroContent h1 {
+        color: var(--cadet);
+        font-weight: bolder;
+        font-size: 40px;
+        line-height: 51px;
     }
 
-    @media (max-width: 420px){
+    @media (max-width: 650px){
         .hero {
-        height: 548px;
+        height: 850px;
         background-image: url('assets/image-hero-mobile.png');
+        background-position: center top 450px;
+        justify-content: flex-start;
         }
+        .heroContent {
+        width: 343px;
+        margin: 0 auto;
+        }
+        .heroContent h1 {
+        color: var(--cadet);
+        font-weight: bolder;
+        font-size: 40px;
+        line-height: 51px;
+        margin: 0;
     }
 </style>
