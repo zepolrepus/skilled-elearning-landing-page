@@ -1,0 +1,62 @@
+---
+import Button from "./Button.astro";
+---
+<header>
+    <div class="hero">
+        <nav class="navbar">
+            <div><img src="assets/logo-dark.svg" alt="logo"></div>
+            <div><Button buttonType="button1" buttonText="Get Started"></Button></div>
+        </nav>
+        <div class="heroContent">
+            <h1>Maximize skill, minimize budget</h1>
+            <p class="body_m">Our modern courses across a range of in-demand skills will give you the 
+                knowledge you need to live the life you want</p>
+            <p>
+                <Button buttonType="button2" buttonText="Get Started"></Button>
+            </p>
+            
+    
+        </div>
+    </div>
+</header>
+
+
+<style>
+    .heroContent {
+        width: 457px;
+        margin: auto 0;
+    }
+    .hero {
+        height: 740px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        background-image: url('assets/image-hero-desktop.png');
+        background-repeat: no-repeat;
+        background-position: right -200px top -150px;
+    }
+    .navbar {
+        width: 100%;
+        height: 120px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    @media (max-width: 800px){
+        .hero {
+        height: 548px;
+        background-image: url('assets/image-hero-tablet.png');
+        background-position: right -240px top -75px;
+        }
+    }
+
+    @media (max-width: 420px){
+        .hero {
+        height: 548px;
+        background-image: url('assets/image-hero-mobile.png');
+        }
+    }
+</style>

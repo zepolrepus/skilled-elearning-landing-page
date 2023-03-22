@@ -1,0 +1,87 @@
+---
+const { buttonType, buttonText } = Astro.props;
+---
+
+<!-- HTML !-->
+<button class={buttonType} role="button">{buttonText}</button>
+
+<style>
+    .button1 {
+        width: 167px;
+        height: 56px;
+        border-radius: 100px;
+        background-color: var(--cadet);
+        color: var(--white);
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: bold;
+        cursor: pointer;
+        border: none;
+    }
+    .button1:hover {
+        width: 167px;
+        height: 56px;
+        border-radius: 100px;
+        background-color: var(--gray);
+        color: var(--white);
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: bold;
+        cursor: pointer;
+        border: none;
+    }
+    .button2 {
+        width: 167px;
+        height: 63px;
+        border-radius: 100px;
+        background: var(--grad_A_1);
+        background: linear-gradient(0deg, var(--grad_A_1) 0%, var(--grad_A_2) 100%);
+        color: var(--white);
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: bold;
+        cursor: pointer;
+        border: none;
+    }
+    .button2:hover {
+        width: 167px;
+        height: 63px;
+        border-radius: 100px;
+        background: var(--grad_A_1);
+        background: linear-gradient(0deg, var(--grad_A_1) 0%, var(--grad_A_2) 100%);
+        color: var(--white);
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: bold;
+        cursor: pointer;
+        border: none;
+        opacity: 0.5;
+    }
+    .button3 {
+        width: 167px;
+        height: 56px;
+        border-radius: 100px;
+        background: var(--grad_B_1);
+        background: linear-gradient(0deg, var(--grad_B_1) 0%, var(--grad_B_2) 100%);
+        color: var(--white);
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: bold;
+        cursor: pointer;
+        border: none;
+    }
+    .button3:hover {
+        width: 167px;
+        height: 56px;
+        border-radius: 100px;
+        background: var(--grad_B_1);
+        background: linear-gradient(0deg, var(--grad_B_1) 0%, var(--grad_B_2) 100%);
+        color: var(--white);
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: bold;
+        cursor: pointer;
+        border: none;
+        opacity: 0.5;
+    }
+</style>

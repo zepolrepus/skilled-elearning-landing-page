@@ -1,0 +1,49 @@
+---
+const { cardType, cardText, cardIcon, cardTitle } = Astro.props;
+---
+<div class="card">
+    <div class={`${cardType}Main`}>
+        { cardType === "card2" && (
+            <img src={`assets/${cardIcon}`} alt="{cardTitle}">
+            <h4>{cardTitle}</h4>
+            <p class="body_m">{cardText}</p>
+            <a href="#">Get Started</a>
+        )}
+        
+        
+        { cardType === "card1" && (
+            <h3>{cardText}</h3>
+        )}
+        
+    </div>
+</div>
+
+<style>
+    .card .card1Main {
+        width: 350px;
+        height: 322px;
+        background: var(--grad_A_1);
+        background: linear-gradient(0deg, var(--grad_A_1) 0%, var(--grad_A_2) 100%);
+        border-radius: 15px;
+    }
+    .card .card1Main h3 {
+        color: var(--white);
+        padding: 60px 30px;
+    }
+    .card .card2Main {
+        width: 350px;
+        height: 322px;
+        background-color: var(--white);
+        border-radius: 15px;
+    }
+
+    .card .card2Main h4, p, a, img {
+        padding-left: 30px;
+    }
+    .card .card2Main img {
+        position: relative;
+        top: -30px;
+        
+
+    }
+</style>

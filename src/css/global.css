@@ -1,0 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap');
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --violet: hsl(234, 25%, 52%);
+    --cadet: hsl(233, 54%, 16%);
+    --gray: hsl(232, 10%, 56%);
+    --rose: hsl(341, 92%, 62%);
+    --pink: hsl(341, 100%, 83%);
+    --grad_A_1: hsl(322, 87%, 55%);
+    --grad_A_2: hsl(13, 100%, 64%);
+    --grad_B_1: hsl(237, 100%, 64%);
+    --grad_B_2: hsl(322, 87%, 55%);
+
+    --sm: 420px;
+    --md: 820px;
+}
+
+html, body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background: var(--white);
+    margin: 0;
+    padding: 0;
+}
+
+main, header, footer {
+    max-width: 1440px;
+    margin: auto;
+}
+
+main {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 60px;
+    background: var(--white);
+    background: linear-gradient(180deg, var(--white) 0%, var(--violet) 500%);
+    justify-items: center;
+    align-items: end;
+}
+
+h1 {
+    color: var(--cadet);
+    font-weight: bolder;
+    font-size: 56px;
+    line-height: 70px;
+}
+h2 {
+    color: var(--cadet);
+    font-weight: bolder;
+    font-size: 40px;
+    line-height: 51px;
+}
+h3 {
+    color: var(--cadet);
+    font-weight: bolder;
+    font-size: 32px;
+    line-height: 40px;
+}
+h4 {
+    color: var(--cadet);
+    font-weight: bolder;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.body_m {
+    color: var(--gray);
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.body_s {
+    color: var(--gray);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+a {
+    color: var(--rose);
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 28px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--pink);
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 28px;
+    text-decoration: none;
+}
+
+
+@media (max-width: 820px){
+   main {
+    grid-template-columns: 1fr 1fr;
+   }
+}
+
+@media (max-width: 420px){
+    main {
+        grid-template-columns: 1fr;
+       }
+}
+
